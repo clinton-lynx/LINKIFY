@@ -1,0 +1,195 @@
+// @import "./variables";
+* {
+  font-family: 'Roobert', 'Basis Grotesque', -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol';
+  box-sizing: border-box;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roobert', 'Basis Grotesque', 'Poppings', -apple-system,
+    BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  font-variant-numeric: slashed-zero;
+  color: $dark-blue;
+  direction: ltr;
+  unicode-bidi: isolate;
+  width: 100%;
+  position: relative;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1rem;
+  line-height: 1.5;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  font-style: inherit;
+  font-variant: inherit;
+  font-weight: inherit;
+  font-stretch: inherit;
+  font-size: inherit;
+  font-family: inherit;
+  vertical-align: baseline;
+  line-height: 1;
+
+  &.no-scroll {
+    overflow: hidden;
+  }
+}
+
+::selection {
+  background: #b6a08f;
+  padding: 1rem;
+}
+
+h1 {
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
+    'Basis Grotesque', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2em;
+  line-height: 78px;
+  text-align: right;
+  letter-spacing: -1.31923px;
+}
+
+h2 {
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
+    'Basis Grotesque', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2em;
+  line-height: 36px;
+  text-align: center;
+  letter-spacing: -1.31923px;
+}
+
+h3 {
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
+    'Basis Grotesque', sans-serif;
+  font-size: clamp(1.8rem, 1.8rem, 3.5rem);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.8em;
+  line-height: 39px;
+  text-align: center;
+  letter-spacing: -1.31923px;
+}
+h4 {
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
+    'Basis Grotesque', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 32px;
+  letter-spacing: 0.68px;
+}
+h5 {
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
+    'Basis Grotesque', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  letter-spacing: -1.31923px;
+}
+h6 {
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
+    'Basis Grotesque', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+}
+
+small {
+  font-size: 85%;
+}
+
+button:focus {
+  outline: none;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+.pointer {
+  cursor: pointer;
+}
+input.input,
+select.input,
+textarea.input {
+  background: #ffffff;
+  border: 1px solid #d5d8db;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 12px;
+  width: 100%;
+  &.error {
+    border-color: #ff0000;
+    outline: #ff0000;
+  }
+}
+
+.btn {
+  border-radius: 4px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: 12px 1rem;
+  margin: 0.5%;
+  width: 100%;
+  color: $primary-blue;
+  &.btn-primary {
+    background-color: $primary-blue;
+    color: #ffffff;
+    &:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+  }
+  &.btn-primary-outline {
+    background-color: transparent;
+    border: 1px solid $primary-blue;
+    color: $primary-blue;
+  }
+}
+
+.error {
+  &:not(input):not(select):not(textarea) {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    padding: 18px 18px 18px 24px;
+    border-radius: 3px;
+    font-size: 16px;
+    line-height: 1.5em;
+  }
+}
+.success {
+  &:not(input):not(select):not(textarea) {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+    padding: 18px 18px 18px 24px;
+    border-radius: 3px;
+    font-size: 16px;
+    line-height: 1.5em;
+  }
+}

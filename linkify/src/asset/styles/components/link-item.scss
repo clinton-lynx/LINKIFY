@@ -1,0 +1,33 @@
+@import '../main';
+
+.links{
+    @include flex-row-between-nowrap;
+    // margin:1rem 0;
+    padding:.5rem 0;
+    .link-item{
+        text-align: left;
+        .link-title{
+            font-size:1.1rem;
+            text-transform: capitalize;
+            margin:.3rem 0;
+        }
+        .link{
+            font-size: .875rem;
+            color: #9CA2A9;
+        }
+        .date{
+            color: #9CA2A9;
+            margin:.435rem 0;
+            font-size: .875rem;
+        }
+      
+    }
+    .link-features{
+        @include flex-column-center;
+        .link-copy,.link-share,.link-delete{
+            cursor:pointer;
+
+        }
+    }
+    border-bottom: 2px solid  #b7b9bb63;
+}

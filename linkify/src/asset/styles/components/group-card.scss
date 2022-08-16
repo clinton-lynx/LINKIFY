@@ -1,0 +1,14 @@
+@import '../main';
+
+
+.group{
+    @include flex-row-between-nowrap;
+    border-radius: 4px;
+    padding: 1rem .75rem;
+    border-left: 3px solid #000;
+    margin:1rem 0;
+    box-shadow: 3px 4px 5px 1px #DAD8DB;
+    &-name{
+        text-transform: capitalize;
+    }
+}

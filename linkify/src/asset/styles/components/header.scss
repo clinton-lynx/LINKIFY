@@ -1,0 +1,16 @@
+@import '../main';
+
+
+.header-wrapper{
+    font-family: 'Rooberto';
+    @include flex-row-between-nowrap;
+}
+
+.header__right h4{
+    font-family: 'Rooberto';
+    text-transform: uppercase;
+    font-size: 1rem;
+    word-spacing: 28px;
+    color: #828F95;
+    font-weight: 400;
+}
