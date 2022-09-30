@@ -1,8 +1,6 @@
 // @import "./variables";
 * {
-  font-family: 'Roobert', 'Basis Grotesque', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji',
-    'Segoe UI Emoji', 'Segoe UI Symbol';
+  font-family: 'Rooberto';
   box-sizing: border-box;
   font-weight: 400;
   margin: 0;
@@ -10,9 +8,7 @@
 }
 
 body {
-  font-family: 'Roobert', 'Basis Grotesque', 'Poppings', -apple-system,
-    BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif,
-    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  font-family: 'Roobert';
   font-variant-numeric: slashed-zero;
   color: $dark-blue;
   direction: ltr;
@@ -44,72 +40,11 @@ body {
 }
 
 ::selection {
-  background: #b6a08f;
+  background:  #588DE4;
+  color: #fff;
   padding: 1rem;
 }
 
-h1 {
-  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
-    'Basis Grotesque', sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 2em;
-  line-height: 78px;
-  text-align: right;
-  letter-spacing: -1.31923px;
-}
-
-h2 {
-  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
-    'Basis Grotesque', sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 2em;
-  line-height: 36px;
-  text-align: center;
-  letter-spacing: -1.31923px;
-}
-
-h3 {
-  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
-    'Basis Grotesque', sans-serif;
-  font-size: clamp(1.8rem, 1.8rem, 3.5rem);
-  font-style: normal;
-  font-weight: 600;
-  font-size: 1.8em;
-  line-height: 39px;
-  text-align: center;
-  letter-spacing: -1.31923px;
-}
-h4 {
-  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
-    'Basis Grotesque', sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 26px;
-  line-height: 32px;
-  letter-spacing: 0.68px;
-}
-h5 {
-  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
-    'Basis Grotesque', sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 29px;
-  text-align: center;
-  letter-spacing: -1.31923px;
-}
-h6 {
-  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
-    'Basis Grotesque', sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 24px;
-  display: flex;
-  align-items: center;
-}
 
 small {
   font-size: 85%;

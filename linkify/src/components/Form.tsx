@@ -8,6 +8,7 @@ const InputCard = () => {
             <input type="text" className="input-text" />
             <span className="plus">+</span>
         </form>
+         <div className="save-btn-wrapper"><button className='save-btn'>save current tab</button></div>
         <hr/>
     </div>
   )
