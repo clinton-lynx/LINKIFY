@@ -47,7 +47,10 @@ body{
 
 .btn-wrapper{
     @include flex-row-between-nowrap;
-    max-width:210px;
+    .btn-left{
+        @include flex-row-between-nowrap;
+        max-width:210px;
+    }
     .cancel,.add-tab{
         background: #588DE4;
         color:#fff;
@@ -55,13 +58,14 @@ body{
         border-radius: 4px;
         padding: .565rem 1rem;
         cursor:pointer;
+        text-decoration: none;
         font-size: 1rem;
         text-transform: capitalize;
-
     }
     .cancel{
         background: none;
         border:1px solid #588DE4;
         color: #588DE4;
+        margin-right: .875rem;
     }
 }
