@@ -5,11 +5,11 @@
     @include flex-row-between-nowrap;
     background:#bbc8c69c;
     border-radius: 4px;
-    padding: 1rem .75rem;
+    padding: .1rem .75rem;
     border-left: 3px solid   #588DE4;
-    margin:1rem 0;
+    margin:.61rem 0;
     box-shadow: 3px 4px 5px 1px #DAD8DB;
     &-name{
-        text-transform: capitalize;
+        // text-transform: capitalize;
     }
 }

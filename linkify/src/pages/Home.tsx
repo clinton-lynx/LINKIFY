@@ -1,4 +1,4 @@
-import Reaact from 'react-dom'
+import React, {useState} from 'react'
 // import {Link} from'react-router-dom';
 import Header from '../components/Header'
 import '../asset/styles/app.scss'
@@ -9,6 +9,13 @@ import AddLinkForm from '../components/AddLinkForm';
 import AddTab from './addTab';
 
 function Home() {
+
+  const [links, setLinks]: any = useState([]);
+
+  const addLinks = (link: any) =>{
+      setLinks([...links, link ])
+      console.log('added link')
+  }
   return (
     <>
     <div className="page-wrapper">
@@ -16,13 +23,15 @@ function Home() {
    
     </Header>
     <main className="main">
-      <Form />  
-     
-       <GroupCard title='home' url={"home/add-new-tab"}/>
-       <GroupCard title='links ' url={"/add-new-tab"} />
+      <Form addLinks={addLinks} />  
+     {links.map((link:any) =>(
+       
+       <GroupCard title={link.link} url={"home/add-new-tab"}/>
+     ))}
+       {/* <GroupCard title='links ' url={"/add-new-tab"} />
        <GroupCard title='career' url={"/add-new-tab"} />
        <GroupCard title='adult content' url={"/add-new-tab"} />
-       <GroupCard title='quotes' url={"/add-new-tab"} />
+       <GroupCard title='quotes' url={"/add-new-tab"} /> */}
       </main>
      {/* <Link to='/addTab'> <AddButton /></Link> */}
     </div>
